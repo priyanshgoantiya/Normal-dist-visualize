@@ -33,7 +33,7 @@ bin_size = st.sidebar.number_input('Bin Size', min_value=0.1,
 
 sample_data = np.random.normal(mean, std, 10000)
 fig = ff.create_distplot(
-    [original_data, sample_data], group_labels=['Original data', 'Changed'], bin_size=bin_size, show_curve=curve, show_rug=False, show_hist=hist)
+    [original_data, sample_data], group_labels=['Original data', 'Changed'], bin_size=[0.5, bin_size], show_curve=curve, show_rug=False, show_hist=hist)
 fig.update_xaxes(range=[-10, 10])
 fig.update_yaxes(range=[0, 0.5])
 fig.update_layout(
@@ -42,9 +42,19 @@ fig.update_layout(
     height=800,)
 # Plot!
 st.plotly_chart(fig, theme=None, )
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader("Descriptive Statistics for Original Data")
+    st.write("Mean:", np.mean(original_data))
+    st.write("Standard Deviation:", np.std(original_data))
+    st.write("Minimum:", np.min(original_data))
+    st.write("Maximum:", np.max(original_data))
+    st.write("Bin Size:", 0.5)
 
-st.subheader("Descriptive Statistics for Sample Data")
-st.write("Mean:", np.mean(sample_data))
-st.write("Standard Deviation:", np.std(sample_data))
-st.write("Minimum:", np.min(sample_data))
-st.write("Maximum:", np.max(sample_data))
+with col2:
+    st.subheader("Descriptive Statistics for Sample Data")
+    st.write("Mean:", np.mean(sample_data))
+    st.write("Standard Deviation:", np.std(sample_data))
+    st.write("Minimum:", np.min(sample_data))
+    st.write("Maximum:", np.max(sample_data))
+    st.write("Bin Size:", bin_size)

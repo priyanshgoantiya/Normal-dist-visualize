@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from matplotlib import pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 import plotly.figure_factory as ff
 
 

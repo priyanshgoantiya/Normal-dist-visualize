@@ -44,6 +44,7 @@ where _K_ is the kernel function, _x_i_ represents the data point, _h_ is the ba
 
 ![image](https://user-images.githubusercontent.com/55331192/227041769-f6cce9f4-c7f7-4790-b1de-3a4dea3b2340.png)
 
+Follow this link to visualize kde estimation : https://samp-suman-normal-dist-visualize-app-lkntug.streamlit.app/
 
 Conclusion:
 

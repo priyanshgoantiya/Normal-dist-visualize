@@ -54,7 +54,7 @@ def app():
             plt.plot(x_grid, result, label="Estimation"
                      )
 
-        plt.legend(bbox_to_anchor=(1.2, 1.25))
+        plt.legend()
         st.plotly_chart(fig, theme='streamlit', use_container_width=True)
         return r
 

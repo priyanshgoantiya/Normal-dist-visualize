@@ -5,7 +5,7 @@
 
 PDF can be represented using two main approaches: parametric and non-parametric. In this blog, we will delve into both approaches and understand how to create a PDF from scratch using each of them.
 
-## * Parametric Approach:
+##  Parametric Approach:
 
 The parametric approach involves assuming a specific functional form for the PDF and estimating its parameters. The most common parametric PDF is the Normal Distribution, also known as the Gaussian Distribution. The Normal Distribution is widely used in statistical modeling due to its simple shape and its ability to describe a wide range of natural phenomena.
 
@@ -20,7 +20,7 @@ The Normal Distribution PDF is a bell-shaped curve, with the peak at the mean va
 ![image](https://user-images.githubusercontent.com/55331192/227042229-b65ca224-6336-436f-a6a7-e65abbbd548d.png)
 
 
-## *  Non-Parametric Approach:
+##   Non-Parametric Approach:
 
 The non-parametric approach does not assume any specific functional form for the PDF. Instead, it estimates the PDF directly from the data using a method called **Kernel Density Estimation (KDE).**
 

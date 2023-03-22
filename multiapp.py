@@ -24,6 +24,8 @@ class MultiApp:
     """
 
     def __init__(self):
+        st.set_page_config(page_title='Visualise Statistics', layout='wide',
+                           page_icon='logo.png', initial_sidebar_state='auto')
         self.apps = []
 
     def add_app(self, title, func):
